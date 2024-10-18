@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+    <!-- Menú -->
+    <header class="cabecera">
+        <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
+        <h1 class="cabecera__titulo">Mi Portafolio</h1>
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
+                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
+                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
+                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Presentación -->
+    <section class="presentacion">
+        <img class="presentacion__foto" src="assets/imagen mujer.png" alt="Foto de perfil">
+        <div class="presentacion__contenedor">
+            <h2 class="presentacion__titulo">Hola, mi nombre es Diana Panqueba y construyo páginas web</h2>
+            <p class="presentacion__subtitulo">Soy formada en MINTIC COLOMBIA, SENA Y Estudiante en Alura Latam.</p>
+            <ul class="redes">
+                <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt=""></a></li>
+                <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt=""></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="sobre-mi__titulo">Sobre mí</h2>
+        <p class="sobre-mi__texto">Soy una mujer entusiasta y creativa, recien iniciando en el mundo del Marketing digital y ventas. 
+             Tengo un solido conocimiento en marketing y comunicación, completada con certificación "Mujeres lideres de la Transformación
+             Digital"  en MINTIC COLOMBIA, Marketing Digital" en el SENA y Estudiante en Alura Latan.</p>
+        <p class="sobre-mi__texto">Mis habilidades incluyen conocimientos de Entorno Digital,Mezcla de Mercadeo, E-Marketing,
+             Segmentación de mercados, Publicidad Digital, Comunicación Online, contenidos, Consumidor Digital, INSIGHTS, Conversión,SEM,
+             SEO, SMO, Analítica Web, Metricas, gestion de camapañas en redes sociales. Mi objetivo es ayudar a las empresas a alcanzar 
+             sus metas a través de soluciones digitales innovadoras. </p>
+          
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="habilidades__titulo">Habilidades</h2>
+        <ul class="habilidades__lista">
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/htlm.png" alt="HTML">
+                <p class="habilidades__nombre">HTML 5</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/css_icon.png" alt="CSS">
+                <p class="habilidades__nombre">CSS</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Aficiones -->
+    <section class="aficiones" id="aficiones">
+        <h2 class="aficiones__titulo">Aficiones</h2>
+        <ul class="aficiones__lista">
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Oír música">
+                <p class="aficiones__nombre">Oír música</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/tv_icon.png" alt="Ver series">
+                <p class="aficiones__nombre">Ver series</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/forkspoon_icon.png" alt="Cocinar">
+                <p class="aficiones__nombre">Cocinar</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/camera_icon.png" alt="Tomar fotos">
+                <p class="aficiones__nombre">Tomar fotos</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Formación académica -->
+    <section class="formacion" id="formacion">
+        <h2 class="formacion__titulo">Formación académica</h2>
+        <ul class="formacion__lista">
+
+            <div class="formacion__elemento" onclick="openModal('assets/alura_logo.png')">
+                <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
+                <div>
+                    <h3 class="formacion__nombre">Formación en Front End</h3>
+                    <p class="formacion__detalle">2024 - Alura</p>
+                </div>
+            </div>
+   
+            <div class="formacion__elemento" onclick="openModal('assets/Mintic2.png')">
+                <img class="formacion__icono" src="assets/Mintic2 (1).jpg" alt="Mintic">
+                <div>
+                    <h3 class="formacion__nombre">Mujeres lideres de la Transformación Digital</h3>
+                    <p class="formacion__detalle">2023 - MINTIC</p>
+                </div>
+            </div>
+
+            <div class="formacion__elemento" onclick="openModal('assets/SENA.png')">
+                <img class="formacion__icono" src="assets/SENA.png" alt="SENA">
+                <div>
+                    <h3 class="formacion__nombre">Marketing Digital</h3>
+                    <p class="formacion__detalle">2023 - SENA</p>
+                </div>
+            </div>
+
+        </ul>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section class="proyectos" id="proyectos">
+        <h2 class="proyectos__titulo">Experiencia Programación</h2>
+        <div class="proyectos__contenedor">
+            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
+            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+        </div>
+        <div class="proyectos__contenedor">
+            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
+            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contacto" id="contacto">
+        <h2 class="contacto__titulo">Contacto</h2>
+        <form class="contacto__formulario">
+            <input class="contacto__campo" type="text" placeholder="Nombre">
+            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
+            <button class="contacto__boton" type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+    <script src="script.js"></script>
+</html>
